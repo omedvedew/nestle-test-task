@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="./common/style/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
 </head>
 <body>
     <!-- page heading -->
@@ -72,6 +76,24 @@
     <h2 class="bye-message">Stay hydrated!</h2>
 
     <!-- slider -->
+    <div class="splide">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide"><img src="https://www.nestle.com/sites/default/files/styles/banner_image_slider_style/public/asset-library/publishingimages/stories/communities/water-sanitation-india-banner.jpg?h=b3af1f9e&itok=gTU4BrT5" alt="first-slide" class="splide__slide_img"></li>
+                <li class="splide__slide"><img src="https://www.nestle.com/sites/default/files/asset-library/publishingimages/stories/individuals-families/family-lunch.jpg" alt="first-slide" class="splide__slide_img"></li>
+                <li class="splide__slide"><img src="https://www.nestle.com/sites/default/files/styles/banner_image_slider_style/public/asset-library/publishingimages/stories/individuals-families/healthy-hydration-kids-closeup-banner.jpg?h=12672250&itok=p96yiiqI" alt="first-slide" class="splide__slide_img"></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        new Splide( '.splide', {
+        type    : 'loop',
+        perPage : 1,
+        autoplay: true,
+        rate: 0.1,
+    } ).mount();
+    </script>
 
 </body>
 </html>
