@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+body .page-title {
+  display: flex;
+  max-width: 100%;
+  border-top: 1px solid black;
+  background-color: rgba(150, 250, 250, 0.6);
+  line-height: 49px;
+  padding: 0 15px;
+  margin: 50px 100px 15px 100px;
+}
+
+.flex-article {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 100px;
+  margin-bottom: 50px;
+}
+.flex-article .article__cover-image {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.flex-article .article__quotation {
+  display: flex;
+  margin: 50px;
+  padding: 25px;
+  justify-content: center;
+  font-size: 18px;
+  font-style: italic;
+  background-color: rgba(150, 250, 250, 0.6);
+}
+.flex-article .article__paragraph {
+  font-size: 18px;
+  line-height: 24px;
+}
+.flex-article .article__title {
+  margin-bottom: 15px;
+}
+
+.float-article {
+  display: block;
+  width: 100%;
+  padding: 0 100px;
+  margin-bottom: 50px;
+}
+.float-article .float-article__image {
+  display: block;
+  float: right;
+  max-height: 250px;
+}
+.float-article .float-article__paragraph {
+  font-size: 18px;
+  line-height: 24px;
+}
+.float-article .float-article__title {
+  margin-bottom: 15px;
+}
+
+.float-article:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.grid-articles-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  padding: 0 100px;
+}
+.grid-articles-container .grid-article-container__article {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 50px 265px auto;
+  margin-right: 25px;
+}
+.grid-articles-container .grid-article-container__article .grid-article-container__article__image {
+  display: grid;
+  max-width: 100%;
+  max-height: 250px;
+  margin-bottom: 15px;
+  justify-self: center;
+}
+.grid-articles-container .grid-article-container__article .grid-article-container__article_text-content {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+}
+.grid-articles-container .grid-article-container__article:last-child {
+  margin-right: 0;
+  margin-left: 25px;
+}
+
+.bye-message {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */
